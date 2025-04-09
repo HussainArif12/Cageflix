@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
 export const fetchAllMovies = async () => {
-  const response = await axios.get("http://localhost:3000/api/get_all_movies");
+  const response = await axios.get(`http://localhost:3000/api/get_all_movies`);
   return response.data as MovieType[];
 };
 

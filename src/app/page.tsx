@@ -5,11 +5,11 @@ import Navbar from "../components/Navbar";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import HomePage from "@/components/HomePage";
 import SearchResults from "@/components/SearchResults";
+import useSearchMovies from "@/hooks/useSearchMovies";
 
 export default function Home() {
   const queryClient = new QueryClient();
   const searchParams = useSearchParams().get("search");
-  console.log(searchParams);
   return (
     <div className="flex flex-col scrollbar-hide font-[family-name:var(--font-geist-sans)]">
       <Navbar />

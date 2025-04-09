@@ -5,7 +5,7 @@ const Searchbar: React.FC = () => {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
-  const [searchValue, setSearchValue] = useState<string>();
+  const [searchValue, setSearchValue] = useState<string>("");
 
   const createQueryString = useCallback(
     (name: string, value: string) => {
