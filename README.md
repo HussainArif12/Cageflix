@@ -23,7 +23,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Notes:
 
-For processing of the TSV files, I used Python. The code is in the `processing_utils` folder. It reads from the .tsv files and then produces a JSON file in the src/assets/folder.
+For processing of the TSV files, I used Python. The code is in the `processing_utils` folder. It reads from the .tsv files and then produces a JSON file in the src/assets/ folder.
 To update the JSON file, download the following files from the [IdMb website](https://developer.imdb.com/non-commercial-datasets/)
 
 - title.principals.tsv.gz
