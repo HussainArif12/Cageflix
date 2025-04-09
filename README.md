@@ -32,3 +32,11 @@ To update the JSON file, download the following files from the [IdMb website](ht
 - title.ratings.tsv.gz
 
 Additionally, you would also need to get an API key from the [OMDb Website](https://www.omdbapi.com/). Please place an environment variable called `OMDB_API_KEY` in the `.env` folder at the root of the project.
+
+To run the Python script
+
+```
+#make sure you've made a virtual environment!
+pip install -r ./requirements.txt
+python processing_utils/process_tsv.py
+```
