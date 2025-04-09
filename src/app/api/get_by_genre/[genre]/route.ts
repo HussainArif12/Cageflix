@@ -1,6 +1,7 @@
 import { returnJSON } from "@/utils/returnJSON";
 import { NextRequest } from "next/server";
 
+//@ts-ignore
 export async function GET(request: NextRequest, context: any) {
   const { genre } = await context.params;
   const limitQuery = parseInt(request.nextUrl.searchParams.get("limit") || "0");
@@ -9,7 +10,7 @@ export async function GET(request: NextRequest, context: any) {
   const genreResult = data.filter((item) => item.genres.includes(genre));
 
   if (limitQuery > 0) {
-    let sortedResult = genreResult
+    const sortedResult = genreResult
       .sort((a, b) => b.averageRating - a.averageRating)
       .filter(
         (item) =>

@@ -1,11 +1,10 @@
 import { MovieType } from "@/types/MovieType";
-import React, { useEffect, useRef } from "react";
-import MovieDisplay from "./MovieDisplay";
 import {
   ArrowLeftCircleIcon,
-  ArrowLeftIcon,
   ArrowRightCircleIcon,
 } from "@heroicons/react/20/solid";
+import React, { useRef } from "react";
+import MovieDisplay from "./MovieDisplay";
 
 type RowDisplayProps = {
   movies: MovieType[];

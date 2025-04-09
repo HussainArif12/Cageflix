@@ -22,6 +22,7 @@ const Searchbar: React.FC = () => {
       setSearchValue(currentSearchParam);
     }
   }, []);
+
   useEffect(() => {
     if (searchValue) {
       return router.push(

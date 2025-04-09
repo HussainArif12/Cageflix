@@ -6,7 +6,7 @@ import useAllMovies from "@/hooks/useAllMovies";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Fuse from "fuse.js";
 import { useSearchParams } from "next/navigation";
-import React, { useState } from "react";
+import React from "react";
 
 const fuseOptions = {
   keys: ["title", "genres", "nconst", "Poster.plot"],

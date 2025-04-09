@@ -1,7 +1,5 @@
-import getAPIURL from "@/utils/getAPIURL";
 import { returnJSON } from "@/utils/returnJSON";
 import Fuse from "fuse.js";
-import { getAppPageStaticInfo } from "next/dist/build/analysis/get-page-static-info";
 import { NextRequest } from "next/server";
 
 const fuseOptions = {

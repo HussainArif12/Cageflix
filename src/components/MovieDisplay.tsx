@@ -1,15 +1,12 @@
 import { MovieType } from "@/types/MovieType";
+import Image from "next/image";
 import React, { useState } from "react";
-import Image, { ImageLoaderProps } from "next/image";
-import { Dialog } from "@headlessui/react";
 import DialogBox from "./DialogBox";
 
 type MovieDisplayProps = {
   movie: MovieType;
   isSearch?: boolean;
 };
-const backupImage =
-  "https://as2.ftcdn.net/v2/jpg/12/99/90/35/1000_F_1299903552_cfghylJnk6Gc1i29ytjQQsNSOjzyPtU9.jpg";
 
 const MovieDisplay: React.FC<MovieDisplayProps> = ({
   movie,

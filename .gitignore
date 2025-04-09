@@ -9,7 +9,7 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
-
+/processing_utils/__pycache__
 # testing
 /coverage
 

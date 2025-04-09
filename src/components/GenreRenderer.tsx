@@ -1,11 +1,10 @@
 "use client";
 import useMoviesByGenre from "@/hooks/useMoviesByGenre";
+import Fuse from "fuse.js";
 import { useParams, useSearchParams } from "next/navigation";
 import React from "react";
-import RowDisplay from "./RowDisplay";
 import LoadingAnimation from "./LoadingAnimation";
 import MovieDisplay from "./MovieDisplay";
-import Fuse from "fuse.js";
 
 type GenreRenderProps = {
   genre: string;

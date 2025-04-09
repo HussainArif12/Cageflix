@@ -1,7 +1,6 @@
 "use client";
 import GenreRenderer from "@/components/GenreRenderer";
 import Navbar from "@/components/Navbar";
-import useMoviesByGenre from "@/hooks/useMoviesByGenre";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useParams } from "next/navigation";
 import React from "react";

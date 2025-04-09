@@ -1,16 +1,10 @@
-import React, { useEffect, useState } from "react";
-import {
-  Button,
-  Description,
-  Dialog,
-  DialogPanel,
-  DialogTitle,
-} from "@headlessui/react";
 import { MovieType } from "@/types/MovieType";
-import Image from "next/image";
-import LoadingAnimation from "./LoadingAnimation";
-import GenreLabel from "./GenreLabel";
+import { Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/20/solid";
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
+import GenreLabel from "./GenreLabel";
+import LoadingAnimation from "./LoadingAnimation";
 
 type DialogBoxProps = {
   movie: MovieType;

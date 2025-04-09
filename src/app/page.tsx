@@ -1,11 +1,10 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
-import Navbar from "../components/Navbar";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import HomePage from "@/components/HomePage";
 import SearchResults from "@/components/SearchResults";
-import useSearchMovies from "@/hooks/useSearchMovies";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { useSearchParams } from "next/navigation";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   const queryClient = new QueryClient();
