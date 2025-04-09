@@ -44,7 +44,7 @@ const DialogBox: React.FC<DialogBoxProps> = ({
               className="flex flex-row mb-2 text-2xl font-bold font-medium text-white"
             >
               <div className="flex flex-row">
-                {movie.title}
+                {movie.title} ({movie.startYear != "\\N" && movie.startYear})
                 <div>
                   {movie.genres.map((item) => (
                     <GenreLabel key={item} text={item} />
