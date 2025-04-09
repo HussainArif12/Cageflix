@@ -9,6 +9,7 @@ import Navbar from "../components/Navbar";
 export default function Home() {
   const queryClient = new QueryClient();
   const searchParams = useSearchParams().get("search");
+  console.log(process.env.VERCEL_URL);
   return (
     <div className="flex flex-col scrollbar-hide font-[family-name:var(--font-geist-sans)]">
       <Navbar />
