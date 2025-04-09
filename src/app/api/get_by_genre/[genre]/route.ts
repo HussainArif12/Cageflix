@@ -1,7 +1,6 @@
 import { returnJSON } from "@/utils/returnJSON";
 import { NextRequest } from "next/server";
 
-//@ts-ignore
 export async function GET(request: NextRequest, context: any) {
   const { genre } = await context.params;
   const limitQuery = parseInt(request.nextUrl.searchParams.get("limit") || "0");
