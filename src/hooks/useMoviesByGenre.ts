@@ -1,4 +1,5 @@
 import { MovieType } from "@/types/MovieType";
+import getAPIURL from "@/utils/getAPIURL";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
@@ -6,10 +7,9 @@ export const fetchMoviesByGenre = async (
   genre: string,
   limitQuery?: number
 ) => {
-  const response = await axios.get(
-    `http://localhost:3000/api/get_by_genre/${genre}`,
-    { params: { limit: limitQuery } }
-  );
+  const response = await axios.get(`${getAPIURL()}/api/get_by_genre/${genre}`, {
+    params: { limit: limitQuery },
+  });
   console.log(response);
   return response.data as MovieType[];
 };

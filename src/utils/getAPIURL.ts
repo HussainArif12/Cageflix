@@ -1,3 +1,3 @@
 export default function getAPIURL() {
-  process.env.NODE_ENV === "development" ? "https://localhost:3000" : "";
+  return process.env.NODE_ENV === "development" ? "http://localhost:3000" : "";
 }

@@ -5,6 +5,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Searchbar from "./Searchbar";
 import DropdownMenu from "./DropdownMenu";
+import logo from "../assets/Cageflix.png";
 
 const Navbar: React.FC = () => {
   const [searchVisible, setSearchVisible] = useState<boolean>(false);
@@ -13,12 +14,7 @@ const Navbar: React.FC = () => {
     <div className="flex justify-between top-0 fixed z-50 w-full bg-black items-center">
       <div className="flex flex-row">
         <Link href="/">
-          <Image
-            src="https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940"
-            alt="Netflix logo"
-            width={80}
-            height={200}
-          />
+          <Image src={logo} alt="Cageflix logo" width={80} height={200} />
         </Link>
 
         <DropdownMenu />
