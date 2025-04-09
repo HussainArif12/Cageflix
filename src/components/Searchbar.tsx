@@ -16,7 +16,12 @@ const Searchbar: React.FC = () => {
     },
     [searchParams]
   );
-
+  useEffect(() => {
+    const currentSearchParam = searchParams.get("search");
+    if (currentSearchParam) {
+      setSearchValue(currentSearchParam);
+    }
+  }, []);
   useEffect(() => {
     if (searchValue) {
       return router.push(
@@ -31,6 +36,7 @@ const Searchbar: React.FC = () => {
     <div>
       <input
         type="text"
+        value={searchValue}
         className="bg-white h-full rounded-md mr-2 text-black px-2"
         onChange={(event) => {
           setSearchValue(event.target.value);
