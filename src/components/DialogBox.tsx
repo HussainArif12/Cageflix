@@ -60,7 +60,7 @@ const DialogBox: React.FC<DialogBoxProps> = ({
               <XMarkIcon
                 height={20}
                 width={30}
-                className="absolute right-20 text-black bg-red-400 cursor-pointer"
+                className="absolute text-black bg-red-400 cursor-pointer right-[19%]"
                 onClick={handleClose}
               />
             </DialogTitle>
