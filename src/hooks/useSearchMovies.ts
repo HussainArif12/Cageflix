@@ -1,5 +1,4 @@
 import { MovieType } from "@/types/MovieType";
-import getAPIURL from "@/utils/getAPIURL";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
@@ -8,7 +7,7 @@ type SearchResultType = {
 };
 
 const searchMovies = async (searchQuery: string) => {
-  const response = await axios.get(`${getAPIURL()}/api/search`, {
+  const response = await axios.get(`/api/search`, {
     params: { search: searchQuery },
   });
   return response.data as SearchResultType[];
