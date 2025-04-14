@@ -43,7 +43,7 @@ const DialogBox: React.FC<DialogBoxProps> = ({
               as="h3"
               className="flex flex-row mb-2 text-2xl font-bold font-medium text-white"
             >
-              <div className="flex flex-row">
+              <div className="flex flex-row flex-none">
                 {movie.title} ({movie.startYear != "\\N" && movie.startYear})
                 <div>
                   {movie.genres.map((item) => (
@@ -57,10 +57,11 @@ const DialogBox: React.FC<DialogBoxProps> = ({
                   </span>
                 </div>
               </div>
+              <div className="flex-grow"></div>
               <XMarkIcon
                 height={20}
                 width={30}
-                className="absolute text-black bg-red-400 cursor-pointer right-[16%] hover:bg-red-200"
+                className="text-black bg-red-400 cursor-pointer left-3 top-0 hover:bg-red-200"
                 onClick={handleClose}
               />
             </DialogTitle>
