@@ -27,11 +27,11 @@ const DropdownMenu: FC = () => {
       </MenuButton>
       <MenuItems
         anchor="bottom"
-        className="rounded-md border-1 border-red-500 my-1 bg-slate-800"
+        className="rounded-md border-1 border-red-500 my-3 bg-slate-800"
       >
         <MenuItem>
           <Link
-            className="p-2 block data-[focus]:bg-blue-100 w-[10rem] border-1 border-black"
+            className="p-2 block data-[focus]:bg-blue-100 data-[focus]:text-black w-[10rem] border-1 border-black"
             href="/all"
           >
             All
@@ -40,7 +40,7 @@ const DropdownMenu: FC = () => {
         {genres.map((item) => (
           <MenuItem key={item}>
             <Link
-              className="block p-2 data-[focus]:bg-blue-100 w-[10rem] border-1 border-black"
+              className="block p-2 data-[focus]:text-black data-[focus]:bg-blue-100 w-[10rem] border-1 border-black"
               href={`/genre/${item}`}
             >
               {item}

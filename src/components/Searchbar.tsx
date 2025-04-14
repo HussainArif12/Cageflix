@@ -38,10 +38,11 @@ const Searchbar: React.FC = () => {
       <input
         type="text"
         value={searchValue}
-        className="bg-white h-full rounded-md mr-2 text-black px-2"
+        className="bg-white h-full rounded-md m-2 text-black py-[0.1rem] px-2 w-[32rem]"
         onChange={(event) => {
           setSearchValue(event.target.value);
         }}
+        placeholder="Search genre, description or actor.."
       />
     </div>
   );

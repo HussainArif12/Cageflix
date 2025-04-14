@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
   const [searchVisible, setSearchVisible] = useState<boolean>(false);
 
   return (
-    <div className="flex justify-between top-0 fixed z-50 w-full bg-black items-center">
+    <div className="flex justify-between top-0 fixed z-50 w-full bg-zinc-800 items-center">
       <div className="flex flex-row">
         <Link href="/">
           <Image src={logo} alt="Cageflix logo" width={80} height={200} />
@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
         />
         <div
           className={`transition-all duration-300 ease-in-out ${
-            searchVisible ? "mr-2" : "-mr-[16rem] delay-150"
+            searchVisible ? "mr-0" : "-mr-[33rem] delay-150"
           }`}
         >
           <Searchbar />
