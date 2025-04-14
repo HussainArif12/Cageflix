@@ -1,5 +1,10 @@
 import { MovieType } from "@/types/MovieType";
-import { Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
+import {
+  Dialog,
+  DialogBackdrop,
+  DialogPanel,
+  DialogTitle,
+} from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
@@ -33,6 +38,7 @@ const DialogBox: React.FC<DialogBoxProps> = ({
       className="relative z-10 focus:outline-none "
       onClose={handleClose}
     >
+      <DialogBackdrop className="fixed inset-0 bg-black/40" />
       <div className="fixed my-10 inset-0 z-10 w-full overflow-y-auto">
         <div className="flex min-h-full items-center justify-center p-4">
           <DialogPanel
@@ -61,7 +67,7 @@ const DialogBox: React.FC<DialogBoxProps> = ({
               <XMarkIcon
                 height={20}
                 width={30}
-                className="text-black bg-red-400 cursor-pointer left-3 top-0 hover:bg-red-200"
+                className="text-black rounded-md bg-red-400 cursor-pointer left-3 top-0 hover:bg-red-200"
                 onClick={handleClose}
               />
             </DialogTitle>
